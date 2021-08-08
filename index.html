@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <form action="#" class="form-container" id="submit-form" autocomplete="off">
+            <div class="header"><h1>User Application Form</h1></div>
+            <div class="all-inputs-container">
+                <div class="flex-col label-size label-effect">
+                    <label for="username">Name<span id='name-required'></span></label>
+                    <input type="text" maxlength="20" id="username" class="compulsory" placeholder="Enter your name here">
+    
+                </div>
+                <div class="flex-col label-size label-effect">
+                    <label for="mobile">Mobile No. <span class="optional-text">(optional)</span><span
+                            id="mob-required"></span></label>
+                    <input type="number" id="mobile" placeholder="Enter your mobile number here">
+                </div>
+                <div class="flex-col label-size label-effect">
+                    <label for="email">Email <span id="email-required"></span></label>
+                    <input type="text" id="email" class="compulsory" placeholder="Enter your email address here">
+    
+                </div>
+                <div class="flex-col label-size">
+                    <label for="bio">Bio <span class="optional-text">(optional)</span><span
+                            id="bio-required"></span></label>
+                    <textarea name="bio" id="bio" class="compulsory" cols="30" rows="10"
+                        placeholder="Introduce yourself..."></textarea>
+                    <div class="word-counter-box"></span><span id="word-limit"></span><span id="word-counter">0/60</span>
+                    </div>
+                </div>
+                <div class="date-container">
+                    <label for="name" for="dob">Date of Birth :</label>
+                    <input type="date" id="dob" class="dob-input compulsory" placeholder="DD-MM-YYYY">
+                    <span id="date-required"></span>
+                </div>
+                <div class="gender-container">
+                    <p>Gender :</p>
+                    <label for="male"><input type="radio" id="male" class="compulsory" name="gender"
+                            value="Male" checked>Male</label>
+                    <label for="female"><input type="radio" id="female" class="compulsory" name="gender"
+                            value="Female">Female</label>
+                    <label for="other"><input type="radio" id="other" class="compulsory" name="gender"
+                            value="Other">Others</label>
+                    <span id="gender-required"></span>
+                </div>
+    
+                <div class="btn-container">
+                    <button type="submit" id="submit" name="submit" value="submit"
+                        style="background: rgb(10, 119, 10);">SUBMIT</button>
+                    <button type="reset" name="reset" value="reset" style="background: rgb(255, 19, 19);">RESET</button>
+    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
